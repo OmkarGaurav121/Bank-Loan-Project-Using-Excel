@@ -4,6 +4,23 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Profile](https://img.shields.io/badge/Made%20By-Omkar%20Gaurav-success)
 
+## 📚 Table of Contents
+
+- [📌 Project Overview](#-project-overview)
+- [🔍 Objectives](#-objectives)
+- [🧰 Tools & Techniques Used](#-tools--techniques-used)
+- [📊 Project Dashboards](#-project-dashboards)
+  - [🔹 Summary Dashboard](#-summary-dashboard)
+  - [🔹 Overview Dashboard](#-overview-dashboard)
+- [📁 Dataset](#-dataset)
+- [📈 Key Insights](#-key-insights)
+- [📂 Files Included](#-files-included)
+- [👨‍💻 Author](#-author)
+- [🚀 How to Use](#-how-to-use)
+- [💡 Future Improvements](#-future-improvements)
+
+---
+
 ## 📌 Project Overview
 
 This project is a complete **Bank Loan Performance Analysis Dashboard** created in **Microsoft Excel**, designed to provide key insights into financial loan data including:
