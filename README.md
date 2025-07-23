@@ -47,14 +47,14 @@ It includes:
 ### 🔹 Summary Dashboard  
 A clean top-level view to monitor key loan KPIs, application trends, credit grades, and charged-off risks.
 
-[<img src="Summary Dashboard.png" width="700"/>](Summary Dashboard.png)
+[<img src="Summary Dashboard.png" width="700"/>]
 
 ---
 
 ### 🔹 Overview Dashboard  
 Focused breakdown of loan performance by term, interest rate, and payment status with dynamic filtering.
 
-[<img src="Overview Dashboard.png" width="700"/>](Overview Dashboard.png)
+[<img src="Overview Dashboard.png" width="700"/>]
 
 ---
 
