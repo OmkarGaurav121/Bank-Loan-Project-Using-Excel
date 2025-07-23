@@ -149,10 +149,13 @@ Excel is a powerful tool for financial analysis and dashboarding. This project s
 
 ---
 
-## 👤 Author
+## 🙋 About Me
 
 **Omkar Gaurav**  
-📎 GitHub: [OmkarGaurav121](https://github.com/OmkarGaurav121)
+🎓 Final Year B.Tech Student | 📊 Aspiring Data Analyst  
+📧 Email: omkargaurav121@gmail.com  
+💼 [LinkedIn](https://www.linkedin.com/in/omkar-gaurav-1508b6303/)  
+💻 [GitHub](https://github.com/OmkarGaurav121)
 
 ---
 
