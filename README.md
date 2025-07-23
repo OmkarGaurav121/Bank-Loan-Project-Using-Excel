@@ -1,137 +1,115 @@
-# 🏦 Excel Bank Loan Analysis Dashboard
+# 💼 Excel Bank Loan Analysis Project
 
-![Excel Project](https://img.shields.io/badge/Excel-Loan%20Analysis-green)
-![Status](https://img.shields.io/badge/Status-Completed-blue)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![License](https://img.shields.io/badge/Tool-Excel-blue)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Profile](https://img.shields.io/badge/Made%20By-Omkar%20Gaurav-success)
 
-A comprehensive Excel-based loan performance analysis project that uses dashboards and KPIs to evaluate and visualize key financial metrics in the banking sector.
+## 📌 Project Overview
 
----
+This project is a complete **Bank Loan Performance Analysis Dashboard** created in **Microsoft Excel**, designed to provide key insights into financial loan data including:
 
-## 📋 Table of Contents
-- [📌 Problem Statement](#-problem-statement)
-- [🎯 Objectives](#-objectives)
-- [🧰 Tools Used](#-tools-used)
-- [📊 Dataset Info](#-dataset-info)
-- [🧹 Data Cleaning & Processing](#-data-cleaning--processing)
-- [📈 Dashboards](#-dashboards)
-- [🔍 Key Insights](#-key-insights)
-- [⚙️ Challenges Faced](#️-challenges-faced)
-- [✅ Conclusion](#-conclusion)
-- [📎 How to Use](#-how-to-use)
-- [🙋‍♂️ About Me](#-about-me)
-- [📝 License](#-license)
+- Loan statuses
+- Interest rate distribution
+- Loan term trends
+- Credit risk classification
+- Key KPIs like total applicants, default ratio, interest ranges, and more
+
+It includes:
+- 📊 Summary Dashboard  
+- 📈 Overview Dashboard  
+- 📋 Detailed Sheet with slicers and filters
 
 ---
 
-## 📌 Problem Statement
+## 🔍 Objectives
 
-Banks handle thousands of loan applications daily. This project aims to analyze and visualize loan performance data to assist banks in:
-- Monitoring active, paid, and defaulted loans
-- Improving decision-making processes
-- Enhancing customer targeting strategies
-
----
-
-## 🎯 Objectives
-
-- Clean and structure financial loan data
-- Create visually informative dashboards in Excel
-- Highlight key metrics (loan status, term, purpose, etc.)
-- Extract business-level insights from the visual data
+- Analyze loan data efficiently using Excel functions and Pivot Tables
+- Build interactive dashboards for top-level and detailed insights
+- Highlight risk areas such as **Charged-Off loans**, **High Interest Rate loans**, etc.
+- Create slicers for dynamic filtering (Term, Grade, Status, etc.)
 
 ---
 
-## 🧰 Tools Used
+## 🧰 Tools & Techniques Used
 
-- **Microsoft Excel**
-  - Power Query for data cleaning
-  - Pivot Tables & Charts
-  - Slicers & Timelines
-  - Dashboard Design & Formatting
-- Optional (for source tracking): GitHub
-
----
-
-## 📊 Dataset Info
-
-- **Source**: Provided `financial_loan.csv`
-- **Size**: ~10,000+ records
-- **Fields**: Loan Status, Interest Rate, Loan Amount, Purpose, Term, Grade, etc.
-
-🔗 [Download Sample Dataset](./financial_loan.csv)
+| Tool        | Usage                         |
+|-------------|-------------------------------|
+| **Excel**   | Data cleaning, Pivot Tables, Charts, Dashboards |
+| **Pivot Table** | To group and summarize loan data |
+| **Slicers** | For interactivity and filtering |
+| **Conditional Formatting** | Highlight key trends and risks |
+| **Formulas** | COUNTIF, SUMIFS, IF, etc. |
 
 ---
 
-## 🧹 Data Cleaning & Processing
+## 📊 Project Dashboards
 
-Performed in **Excel Power Query Editor**:
-- Removed blank/null rows and columns
-- Converted text fields to lowercase
-- Removed duplicates
-- Standardized column names
-- Corrected inconsistent date formats
-- Transformed interest rate to numeric
+### 🔹 Summary Dashboard  
+A clean top-level view to monitor key loan KPIs, application trends, credit grades, and charged-off risks.
+
+[<img src="Summary Dashboard.png" width="700"/>](Summary Dashboard.png)
 
 ---
 
-## 📈 Dashboards
+### 🔹 Overview Dashboard  
+Focused breakdown of loan performance by term, interest rate, and payment status with dynamic filtering.
 
-### 🟢 Overview Dashboard
-
-![Overview Dashboard](Images/Overview%20Dashboard.png)
-
-- Overall loan health distribution
-- Interest rates by term and grade
-- Filters by loan status, purpose, and year
+[<img src="Overview Dashboard.png" width="700"/>](Overview Dashboard.png)
 
 ---
 
-### 🔵 Summary Dashboard
+## 📁 Dataset
 
-![Summary Dashboard](Images/Summary%20Dashboard.png)
-
-- Key KPIs: Total Funded Amount, Outstanding Principal, Interest Received
-- Visual breakdowns by Loan Status and Purpose
-- Year-on-year loan issuance trends
+- **File Name:** `financial_loan.csv`
+- **Rows:** ~10,000
+- **Fields:** ID, Loan Amount, Term, Interest Rate, Grade, Status, Purpose, etc.
 
 ---
 
-## 🔍 Key Insights
+## 📈 Key Insights
 
-| Insight No. | Description |
-|-------------|-------------|
-| 1️⃣ | Over 60% of the loans are Fully Paid; 10% Charged Off |
-| 2️⃣ | Most loans fall under the category of **Personal** or **Debt Consolidation** |
-| 3️⃣ | Grade B and C dominate loan approvals |
-| 4️⃣ | Default rates are highest in **Small Business** category |
-| 5️⃣ | Longer-term loans have higher interest rates |
-| 6️⃣ | Q4 shows highest loan disbursements year-on-year |
+- 📌 **High volume of charged-off loans** in lower credit grades (`E`, `F`)
+- 💰 **Most loans fall under the 36-month term**
+- 🎯 **Fully Paid loans dominate**, but there's a noticeable risk segment
+- 🔍 Interactive filtering allows targeted analysis by grade, term, and purpose
 
 ---
 
-## ⚙️ Challenges Faced
+## 📂 Files Included
 
-- Converting mixed-type columns (e.g., % Interest)
-- Cleaning inconsistent "Loan Status" values
-- Designing interactive dashboards without VBA
-- Ensuring performance with large datasets
-
----
-
-## ✅ Conclusion
-
-This Excel Dashboard provides a complete 360° view of loan performance, allowing financial institutions to:
-- Understand customer behavior
-- Detect risk patterns
-- Plan better loan strategies
-
-It's a great example of how Excel can be used not just for calculation, but for **decision intelligence**.
+| File Name                  | Description                             |
+|---------------------------|-----------------------------------------|
+| `Bank Loan Excel Project.xlsx` | Main Excel file with all dashboards     |
+| `financial_loan.csv`      | Raw dataset used for analysis           |
+| `Summary Dashboard.png`   | Snapshot of the Summary Dashboard       |
+| `Overview Dashboard.png`  | Snapshot of the Overview Dashboard      |
 
 ---
 
-## 📎 How to Use
+## 👨‍💻 Author
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/Excel-Bank-Loan-Project.git
+**Omkar Gaurav**  
+📧 omkargaurav121@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/omkar-gaurav-1508b6303)  
+💻 [GitHub](https://github.com/OmkarGaurav121)
+
+---
+
+## 🚀 How to Use
+
+1. Clone or download the repo
+2. Open `Bank Loan Excel Project.xlsx`
+3. Use slicers to interact with the dashboards
+4. Explore KPIs and trends via dynamic Pivot Tables
+
+---
+
+## 💡 Future Improvements
+
+- Add Power BI version for enhanced interactivity
+- Include loan amount prediction using regression (Python)
+- Export key metrics to PDF via macros
+
+---
+
+⭐ If you found this project helpful, consider giving it a star!
