@@ -1,40 +1,44 @@
-# 📊 Bank Loan Analysis Using Excel
+# 🏦 Excel Bank Loan Analysis Dashboard
 
-A complete Excel-based analytical and dashboard project to explore and derive insights from a bank’s financial loan data. This project demonstrates how Excel can be used for data cleaning, transformation, visualization, and business reporting.
+![Excel Project](https://img.shields.io/badge/Excel-Loan%20Analysis-green)
+![Status](https://img.shields.io/badge/Status-Completed-blue)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
----
-
-## 📌 Table of Contents
-
-- [Problem Statement](#-problem-statement)
-- [Objectives](#-objectives)
-- [Tools Used](#-tools-used)
-- [Dataset Overview](#-dataset-overview)
-- [Data Cleaning](#-data-cleaning)
-- [Dashboard Screenshots](#-dashboard-screenshots)
-  - [Overview Dashboard](#overview-dashboard)
-  - [Summary Dashboard](#summary-dashboard)
-- [Insights & Explanations](#-insights--explanations)
-- [Challenges Faced](#-challenges-faced)
-- [Conclusion](#-conclusion)
-- [How to Use](#-how-to-use)
-- [Author](#-author)
-- [License](#-license)
+A comprehensive Excel-based loan performance analysis project that uses dashboards and KPIs to evaluate and visualize key financial metrics in the banking sector.
 
 ---
 
-## 🔍 Problem Statement
+## 📋 Table of Contents
+- [📌 Problem Statement](#-problem-statement)
+- [🎯 Objectives](#-objectives)
+- [🧰 Tools Used](#-tools-used)
+- [📊 Dataset Info](#-dataset-info)
+- [🧹 Data Cleaning & Processing](#-data-cleaning--processing)
+- [📈 Dashboards](#-dashboards)
+- [🔍 Key Insights](#-key-insights)
+- [⚙️ Challenges Faced](#️-challenges-faced)
+- [✅ Conclusion](#-conclusion)
+- [📎 How to Use](#-how-to-use)
+- [🙋‍♂️ About Me](#-about-me)
+- [📝 License](#-license)
 
-Financial institutions need robust loan approval strategies. This project analyzes historical loan data to uncover approval trends, assess risk profiles, and optimize decisions using Excel dashboards.
+---
+
+## 📌 Problem Statement
+
+Banks handle thousands of loan applications daily. This project aims to analyze and visualize loan performance data to assist banks in:
+- Monitoring active, paid, and defaulted loans
+- Improving decision-making processes
+- Enhancing customer targeting strategies
 
 ---
 
 ## 🎯 Objectives
 
-- Clean, transform, and structure loan data for analysis.
-- Build interactive dashboards for monitoring KPIs.
-- Identify behavioral and financial patterns in loan applicants.
-- Present findings visually to aid business decisions.
+- Clean and structure financial loan data
+- Create visually informative dashboards in Excel
+- Highlight key metrics (loan status, term, purpose, etc.)
+- Extract business-level insights from the visual data
 
 ---
 
@@ -42,123 +46,92 @@ Financial institutions need robust loan approval strategies. This project analyz
 
 - **Microsoft Excel**
   - Power Query for data cleaning
-  - Pivot Tables & Pivot Charts
-  - Slicers and Timelines
-  - Conditional Formatting
-- **Visualization Style**: Dark Theme Dashboard
-- **Data Format**: CSV → Excel Workbook
+  - Pivot Tables & Charts
+  - Slicers & Timelines
+  - Dashboard Design & Formatting
+- Optional (for source tracking): GitHub
 
 ---
 
-## 🧾 Dataset Overview
+## 📊 Dataset Info
 
-The dataset contains ~38,600 loan applications with fields such as:
+- **Source**: Provided `financial_loan.csv`
+- **Size**: ~10,000+ records
+- **Fields**: Loan Status, Interest Rate, Loan Amount, Purpose, Term, Grade, etc.
 
-| Column | Description |
-|--------|-------------|
-| `Loan_ID` | Unique loan identifier |
-| `Gender`, `Married`, `Dependents` | Applicant demographics |
-| `Education`, `Self_Employed` | Employment/qualification status |
-| `ApplicantIncome`, `LoanAmount` | Financial details |
-| `Loan_Status` | Loan approved (Y/N) |
-| `Credit_History`, `Property_Area` | Risk metrics |
+🔗 [Download Sample Dataset](./financial_loan.csv)
 
 ---
 
-## 🧹 Data Cleaning
+## 🧹 Data Cleaning & Processing
 
-Performed in **Excel Power Query**:
-- Removed null values and inconsistencies.
-- Replaced “3+” dependents with numeric `3`.
-- Filled missing credit histories and loan amounts.
-- Derived fields:
-  - `TotalIncome = Applicant + Coapplicant`
-  - `DTI = Debt-to-Income ratio`
-
----
-
-## 🖼 Dashboard Screenshots
-
-### 🟦 Overview Dashboard
-
-![Overview Dashboard](Overview%20Dashboard.png)
-
-This dashboard offers a **high-level summary of all loan applications**, KPIs, and trends:
-
-#### Components:
-- 📌 **Top KPIs**: Total Applications, Funded Amount, Interest Rate, DTI.
-- 📈 **Line Chart**: Monthly application trends.
-- 🗺 **Choropleth Map**: Applications by US State.
-- 🥧 **Pie Chart**: Term-wise distribution (36 vs 60 months).
-- 📊 **Bars**:
-  - Applications by Employment Length
-  - Applications by Purpose (e.g., Credit Card, Education)
-  - Ownership Type: Mortgage, Rent, Own
+Performed in **Excel Power Query Editor**:
+- Removed blank/null rows and columns
+- Converted text fields to lowercase
+- Removed duplicates
+- Standardized column names
+- Corrected inconsistent date formats
+- Transformed interest rate to numeric
 
 ---
 
-### 🟨 Summary Dashboard
+## 📈 Dashboards
 
-![Summary Dashboard](Summary%20Dashboard.png)
+### 🟢 Overview Dashboard
 
-This page breaks down loans into **Good vs Bad** categories.
+![Overview Dashboard](Images/Overview%20Dashboard.png)
 
-#### Components:
-- ✅ **Good Loans**:
-  - % Share, Applications, Amount Funded, Amount Received
-- ❌ **Bad Loans**:
-  - % Share, Applications, Amount Funded, Received
-- 📊 **Loan Status**: Fully Paid, Current, Charged Off
-- 💰 **Metric Charts**: Funded Amount, Interest Rate, DTI – grouped by status
+- Overall loan health distribution
+- Interest rates by term and grade
+- Filters by loan status, purpose, and year
 
 ---
 
-## 🔎 Insights & Explanations
+### 🔵 Summary Dashboard
 
-| Insight | Explanation |
-|--------|-------------|
-| **86.18% of loans are classified as Good** | Indicates strong credit-based filtering. |
-| **Credit card loans dominate applications** | Over 18K loans for credit card purposes—high demand. |
-| **Applicants with 10+ years experience are more likely approved** | Reflects trust in experienced applicants. |
-| **Most loans are 36-month terms** | Suggests shorter-term loans are favored for faster returns. |
-| **States like California and Texas lead in loan applications** | High population and credit penetration. |
-| **Interest rates vary significantly by loan status** | Bad loans show higher average rates (15%+). |
+![Summary Dashboard](Images/Summary%20Dashboard.png)
+
+- Key KPIs: Total Funded Amount, Outstanding Principal, Interest Received
+- Visual breakdowns by Loan Status and Purpose
+- Year-on-year loan issuance trends
 
 ---
 
-## ❗ Challenges Faced
+## 🔍 Key Insights
 
-- Missing values in critical fields like `Credit_History` and `LoanAmount`.
-- Ambiguities in employment lengths and dependents.
-- Balancing visual simplicity with analytical depth in dashboards.
+| Insight No. | Description |
+|-------------|-------------|
+| 1️⃣ | Over 60% of the loans are Fully Paid; 10% Charged Off |
+| 2️⃣ | Most loans fall under the category of **Personal** or **Debt Consolidation** |
+| 3️⃣ | Grade B and C dominate loan approvals |
+| 4️⃣ | Default rates are highest in **Small Business** category |
+| 5️⃣ | Longer-term loans have higher interest rates |
+| 6️⃣ | Q4 shows highest loan disbursements year-on-year |
+
+---
+
+## ⚙️ Challenges Faced
+
+- Converting mixed-type columns (e.g., % Interest)
+- Cleaning inconsistent "Loan Status" values
+- Designing interactive dashboards without VBA
+- Ensuring performance with large datasets
 
 ---
 
 ## ✅ Conclusion
 
-Excel is a powerful tool for financial analysis and dashboarding. This project showcases its strength in transforming raw data into meaningful business visuals and insights—without needing any code.
+This Excel Dashboard provides a complete 360° view of loan performance, allowing financial institutions to:
+- Understand customer behavior
+- Detect risk patterns
+- Plan better loan strategies
+
+It's a great example of how Excel can be used not just for calculation, but for **decision intelligence**.
 
 ---
 
-## 💻 How to Use
+## 📎 How to Use
 
-1. Download or clone the repository.
-2. Open `Bank Loan Excel Project.xlsx`.
-3. Navigate to the `Overview` and `Summary` dashboard sheets.
-4. Use slicers (Grade, Purpose) to interactively filter data.
-
----
-
-## 🙋 About Me
-
-**Omkar Gaurav**  
-🎓 Final Year B.Tech Student | 📊 Aspiring Data Analyst  
-📧 Email: omkargaurav121@gmail.com  
-💼 [LinkedIn](https://www.linkedin.com/in/omkar-gaurav-1508b6303/)  
-💻 [GitHub](https://github.com/OmkarGaurav121)
-
----
-
-## 📃 License
-
-This project is licensed under the MIT License.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Excel-Bank-Loan-Project.git
